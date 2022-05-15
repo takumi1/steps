@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
+.trainingsContainer {
+    margin: 0 33%;
+    margin-top: 10%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputForm, .labels, .trackList, .trackContainer {
+    display: flex;
+    flex-direction: row;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputForm {
+    margin: 0 12%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.dateContainer, .distanceContainer {
+    display: flex;
+    flex-direction: column;
 }
-
-.App-link {
-  color: #61dafb;
+.inputForm label {
+    margin-bottom: 15px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentContainer {
+    margin: 3em;
+}
+.labels {
+    margin: 1em;
+}
+.labels span {
+    margin: 0 auto;
+}
+.trackList {
+    display: flex;
+    min-height: 10em;
+    flex-direction: column;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+.trackContainer div {
+    margin: 0 auto;
+    margin-top: 1em;
+    user-select: none;
+}
+.inputForm button {
+    margin-top: 2.6em;
+    padding: 5px 25px 10px 25px;
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 5px;
+    width: 70px;
+    height: 48px;
+    line-height: 40px;
+}
+.date, .distance {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 15px;
+    padding: 15px;
+}
+.cross {
+    cursor: pointer;
 }
